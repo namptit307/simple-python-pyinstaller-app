@@ -4,17 +4,19 @@ pipeline {
     }
     stages {
         stage('Checkout') {
-            step {
+            steps {
                 echo "This is checkout step."
+                sh 'pwd'
+                sh 'ls -la'
             }
         }
         stage('Build') {
-            step {
+            steps {
                 echo "This is build step."
             }
         }
         stage('Finish') {
-            step {
+            steps {
                 echo "Finish all pipeline"
             }
         }
