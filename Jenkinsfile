@@ -1,4 +1,4 @@
-# Testing
+// Testing
 pipeline {
     agent {
         label 'docker-slave01'
