@@ -1,7 +1,7 @@
 // Testing
 pipeline {
     agent {
-        label 'docker-slave01'
+        label 'dockerslave01'
     }
     stages {
         stage('Checkout') {
