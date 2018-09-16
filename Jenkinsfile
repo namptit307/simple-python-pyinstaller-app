@@ -6,6 +6,7 @@ pipeline {
         stage('Compiler') {
             steps {
                 echo "Start to compiling sourcecode."
+                sh 'ip a'
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py'
             }
         }
